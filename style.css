@@ -77,7 +77,9 @@
      color: var(--orange);
  }
 
-
+ .menu-img{
+    display: none;
+}
  .btn1 {
      background: transparent;
      color: var(--green);
@@ -747,18 +749,38 @@
 
  }
  @media screen and (max-width:900px){
-      section {
+    
+    .menu-img{
+        display: block;
+        height: 2.3rem;
+    }
+    nav{
+        padding: 0rem 1rem;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    section {
+         padding: 2rem 1rem;
          position: relative;
          top: 0;
          flex-direction: column;
      }
 
      section .hero-right {
-         width: 80%;
-         margin: 2rem 2rem;
+         width: 100%;
+         margin: 3rem to 0
+;
+         height: auto;
      }
      
-     .cat-veg{
+     .cus{
+        width: auto;
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem 1rem;
      }
 
      .time-box,
