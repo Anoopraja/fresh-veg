@@ -571,8 +571,9 @@
  }
 
  .review-box .box {
-     padding: 2rem 2rem;
-     height: 15rem;
+    overflow: hidden;
+     padding: 1rem 1rem;
+     min-height: 15rem;
      width: 100%;
      background: var(--white);
      border-radius: 0.7rem;
@@ -841,4 +842,5 @@
      .email-box p{
         width: 15rem;
      }
+    
  }
