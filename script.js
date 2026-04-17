@@ -86,10 +86,26 @@ const addButton = document.querySelectorAll(".category-box .cat-veg .inf .inf2")
 addButton.forEach(button => {
     button.addEventListener("click", function () {
         button.innerHTML = "✓"
-
-
     });
 });
+const menuText = document.querySelector("h3 .menu-img")
+const menu = document.querySelector("h3")
+const menuBar = document.querySelector(".menu-bar")
+let menuOpen = false;
+
+menu.addEventListener("click", () => {
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+        menuBar.style.display = "flex";
+        menuText.src = "https://cdn.pixabay.com/photo/2022/03/23/02/48/cross-7086307_1280.png";
+        menuText.style.height = "1.5rem";
+    } else {
+        menuBar.style.display = "none";
+        menuText.src = "https://www.svgrepo.com/show/506723/menu-vertical.svg";
+        menuText.style.height = "1.5rem";
+    }
+})
+
 
 
 

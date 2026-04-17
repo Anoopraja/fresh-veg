@@ -80,7 +80,12 @@
 
  .menu-img {
      display: none;
+
  }
+ .menu-bar{
+    display: none;
+ }
+ 
 
  .btn1 {
      background: transparent;
@@ -726,7 +731,7 @@
      }
 
      section .hero-right {
-         width: 80%;
+         width: fit-content;
          margin: 2rem 2rem;
      }
 
@@ -763,15 +768,31 @@
 
  @media screen and (max-width:900px) {
      section .hero-right {
-
-         height: auto;
+         /* height: auto; */
          background: var(--orange-soft);
-
      }
 
      .menu-img {
          display: block;
-         height: 2.3rem;
+         height: 2rem;
+         transform: rotate(90deg);
+     }
+     .menu-img:hover{
+        cursor: pointer;
+     }
+     .menu-bar{
+        display: none;
+        height: 8rem;
+        color: var(--cream);
+        align-items: center;
+        justify-content: center;
+        background:var(--green) ;
+        position: absolute;
+        top: 2rem;
+        line-height: 1.5;
+        width: 100%;
+        z-index: 10;
+
      }
 
      nav {
@@ -794,7 +815,7 @@
      }
 
      section .hero-right {
-         width: 100%;
+         width: fit-content;
          margin: 3rem to 0;
          height: auto;
      }
