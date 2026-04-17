@@ -842,5 +842,12 @@
      .email-box p{
         width: 15rem;
      }
+     .email-box .input input,.email-box .input button{
+        width: 80%;
+     }
+     .dis {
+        height: auto;
+        flex-direction: column;
+     }
     
  }
